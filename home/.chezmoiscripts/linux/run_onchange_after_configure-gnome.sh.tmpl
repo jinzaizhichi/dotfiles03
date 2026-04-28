@@ -9,19 +9,10 @@ gsettings set org.gnome.desktop.peripherals.touchpad natural-scroll false
 
 gsettings set org.gnome.shell favorite-apps "[ \
 {{ if lookPath "firefox" -}}
-	'firefox.desktop', \
+	'firefox_firefox.desktop', \
 {{ end -}}
 {{ if lookPath "code" -}}
 	'code_code.desktop', \
-{{ end -}}
-{{ if lookPath "qgis" -}}
-	'org.qgis.qgis.desktop', \
-{{ end -}}
-{{ if lookPath "google-earth-pro" -}}
-	'google-earth-pro.desktop',
-{{ end -}}
-{{ if lookPath "virtualbox" -}}
-	'virtualbox.desktop', \
 {{ end -}}
 	'com.mitchellh.ghostty.desktop', \
 	'org.gnome.Nautilus.desktop' \
