@@ -1,5 +1,6 @@
-.*.sw*
+**/.claude/settings.local.json
 *.pyc
+.*.sw*
 .DS_Store
 .Python
 .envrc
