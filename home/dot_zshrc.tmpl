@@ -81,9 +81,7 @@ alias fd=fdfind
 alias ls=eza
 {{- end }}
 
-{{ if stat (printf "%s/.local/bin/nvim" .chezmoi.homeDir) -}}
-export EDITOR=$HOME/.local/bin/nvim
-{{ else if lookPath "nvim" -}}
+{{ if lookPath "nvim" -}}
 export EDITOR=nvim
 {{ else -}}
 export EDITOR=vim
